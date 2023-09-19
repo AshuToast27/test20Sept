@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add()
+        {
+            var text1, text2, result;
+            text1=parseInt(document.getElementById("Text1").value);
+            text2=parseInt(document.getElementById("Text2").value);
+            result=text1+text2;
+            document.getElementById("txtresult").value=result;
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <label for="Text1">Enter First number:</label>
+        <input  id="Text1"><br><br>
+        <label for="Text2">Enter Second Number:</label>
+        <input  id="Text2"><br><br>
+        <label for="txtresult">Result:</label>
+        <input  id="txtresult"><br><br>
+        <button onclick="add()">Display result</button>
+    </form>
+    
+</body>
+</html>
